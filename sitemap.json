@@ -1,0 +1,10 @@
+{
+  "desc": "WechatOwTest sitemap",
+  "rules": [
+    {
+      "action": "allow",
+      "page": "pages/index/index"
+    }
+  ]
+}
+

@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "WechatOwTest",
+    "navigationBarBackgroundColor": "#101826",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#eef3f8",
+    "backgroundTextStyle": "dark"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
+

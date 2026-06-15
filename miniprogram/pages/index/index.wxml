@@ -1,0 +1,64 @@
+<view class="page">
+  <view class="topbar">
+    <view>
+      <text class="eyebrow">OW DATA MINI APP</text>
+      <view class="title">WechatOwTest</view>
+    </view>
+    <view class="pill">{{serviceName}}</view>
+  </view>
+
+  <view class="panel query-panel">
+    <view class="field-label">玩家 ID</view>
+    <input class="query-input" value="{{query}}" placeholder="示例: Player#12345" bindinput="onQueryInput" confirm-type="search" bindconfirm="runQuery" />
+    <button class="primary-button" loading="{{queryLoading}}" disabled="{{queryLoading}}" bindtap="runQuery">查询</button>
+  </view>
+
+  <view class="action-grid">
+    <button class="action-button" loading="{{healthLoading}}" disabled="{{healthLoading}}" bindtap="checkHealth">
+      <text class="action-title">连通</text>
+      <text class="action-subtitle">{{healthStatus}}</text>
+    </button>
+    <button class="action-button" loading="{{loginLoading}}" disabled="{{loginLoading}}" bindtap="login">
+      <text class="action-title">登录</text>
+      <text class="action-subtitle">{{loginStatus}}</text>
+    </button>
+    <button class="action-button pay-button" bindtap="openPay">
+      <text class="action-title">购买</text>
+      <text class="action-subtitle">{{payStatus}}</text>
+    </button>
+  </view>
+
+  <view class="panel status-panel">
+    <view class="section-title">状态</view>
+    <view class="status-row">
+      <text>环境</text>
+      <text>{{envId}}</text>
+    </view>
+    <view class="status-row">
+      <text>服务</text>
+      <text>{{serviceName}}</text>
+    </view>
+    <view class="status-row">
+      <text>额度</text>
+      <text>{{quotaText}}</text>
+    </view>
+  </view>
+
+  <view class="panel result-panel">
+    <view class="section-title">{{resultTitle}}</view>
+    <view class="score-row">
+      <text class="score-value">{{score}}</text>
+      <view class="score-copy">
+        <text class="score-label">{{scoreLabel}}</text>
+        <text class="score-note">{{scoreNote}}</text>
+      </view>
+    </view>
+    <view class="result-list">
+      <view class="result-item" wx:for="{{resultItems}}" wx:key="label">
+        <text>{{item.label}}</text>
+        <text>{{item.value}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+

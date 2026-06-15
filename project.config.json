@@ -1,0 +1,17 @@
+{
+  "description": "WechatOwTest",
+  "miniprogramRoot": "miniprogram/",
+  "projectname": "WechatOwTest",
+  "appid": "wx042e3ed96b7e5b81",
+  "compileType": "miniprogram",
+  "setting": {
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "urlCheck": false
+  },
+  "libVersion": "latest",
+  "condition": {}
+}
+
