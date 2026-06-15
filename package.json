@@ -1,0 +1,13 @@
+{
+  "name": "wechat-ow-test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "preview": "node scripts/wx-ci.js preview",
+    "upload": "node scripts/wx-ci.js upload"
+  },
+  "devDependencies": {
+    "miniprogram-ci": "^2.1.31"
+  }
+}
+
